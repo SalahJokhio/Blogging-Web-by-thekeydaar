@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - MyBlog</title>
+    <link rel="stylesheet" href="/utils/styles.css">
+    <link rel="icon" href="/path/to/your/favicon.ico">
+</head>
+<body>
+    <div id="signup_form" class="auth-container">
+        <h2>Create a New Account</h2>
+        <form enctype="multipart/form-data">
+            <input type="text" id="signupName" placeholder="Name" required>
+            <input type="email" id="signupEmail" placeholder="Email" required>
+            <input type="password" id="signupPassword" placeholder="Password" required>
+            <label for="signupAvatar" class="file-label">Upload Avatar</label>
+            <input type="file" id="signupAvatar" accept="image/*" required>
+            <button id="signup_user_btn" type="submit" class="btn">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="/auth/login.html">Login here</a></p>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 MyBlog. All Rights Reserved. | Developed by <strong>thekeydaar</strong></p>
+        <div class="social-links">
+            <a href="https://facebook.com" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/facebook.png" alt="Facebook">
+            </a>
+            <a href="https://youtube.com" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/youtube-play.png" alt="YouTube">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram">
+            </a>
+        </div>
+    </footer>
+    
+    <script src="/auth/signup/app.js" type="module"></script>
+</body>
+</html>
